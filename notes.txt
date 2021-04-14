@@ -1,0 +1,18 @@
+L.2 Setting up the project
+    make sure node and npm are installed
+    Create new directory
+    >npx create-react-app revents --use-npm
+    > cd revents
+    > ls
+    > npm start
+
+
+sec2 L.9 React concepts
+
+sec3 L.17 Intro to Semantic UI
+    // install semantic-ui
+    npm i semantic-ui-react semantic-ui-css
+    npm i semantic-ui-react@0.88.2 : this is to match the version with the course
+
+    i seem to be having trouble with one of the auto import extensions
+
