@@ -1,17 +1,12 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react'; // i s
+import EventDashboard from '../../frerures/events/eventDashboard/EventDashboard';
 
 export default function App() {
   return (
-    <div className="App">
+    <div>
       <h1>Re-vents</h1>
-      <button className='ui icon red button'>
-        <i className='user icon'/> CSS Button
-      </button>
-      <Button icon='user' content='React Button' color='green'/>
+    <EventDashboard />
     </div>
-
-
   );
 }
 
