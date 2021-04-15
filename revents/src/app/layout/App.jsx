@@ -5,12 +5,12 @@ import { Container } from 'semantic-ui-react';
 
 export default function App() {
   return (
-    <div>
+    <>
       <NavBar />
       <Container className='main'>
       <EventDashboard />
       </Container>
-    </div>
+    </>
   );
 }
 
