@@ -16,3 +16,12 @@ sec3 L.17 Intro to Semantic UI
 
     i seem to be having trouble with one of the auto import extensions
 
+    // SECTION 3 SUMMARY:
+    thinking in react
+    mock the app
+    Static version of the app
+    identifying the state
+    Identifying where the state should live
+    Adding inverse data flow
+
+sec4 CRUD Operations (create, read, update, delete)
