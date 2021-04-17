@@ -25,3 +25,8 @@ sec3 L.17 Intro to Semantic UI
     Adding inverse data flow
 
 sec4 CRUD Operations (create, read, update, delete)
+
+L.28 Createing an event
+
+    npm i cuid - simple way to give our events unique id's 
+        will use firebase for this later in the course

@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { Segment, Header, Form, Button } from 'semantic-ui-react';
+import cuid from 'cuid'; // must import after npm install
 
 export default function EventForm({ setFormOpen, setEvents, createEvent }) {
 	const initialValues = {
-		title       : '',
-		category    : '',
-		description : '',
-		city        : '',
-		venue       : '',
-		date        : ''
+		title: '',
+		category: '',
+		description: '',
+		city: '',
+		venue: '',
+		date: ''
 	};
+
 	const [
 		values,
 		setValues
 	] = useState(initialValues);
 
 	function handleFormSubmit() {
-		createEvent({ ...values, id: cuid(), hostedBy: 'Bob', attendees: [] });
+		createEvent({ ...values, id: cuid(), hostedBy: 'Bob', attendees: [], hostPhotoURL: '/assets/user.png' });
 		setFormOpen(false);
 	}
 
@@ -84,7 +86,7 @@ export default function EventForm({ setFormOpen, setEvents, createEvent }) {
 					/>
 				</Form.Field>
 				<Button type='submit' floated='right' positive content='Submit' />
-				<Button onClickzb={() => setFormOpen(false)} type='submit' floated='right' content='Cancel' />
+				<Button onClick={() => setFormOpen(false)} type='submit' floated='right' content='Cancel' />
 			</Form>
 		</Segment>
 	);
