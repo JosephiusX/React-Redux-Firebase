@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Segment, Header, Form, Button } from 'semantic-ui-react';
 import cuid from 'cuid'; // must import after npm install
 
-export default function EventForm({ setFormOpen, setEvents, createEvent }) {
-	const initialValues = {
+export default function EventForm({ setFormOpen, setEvents, createEvent, selectedEvent }) {
+	const initialValues = selectedEvent ?? {
 		title: '',
 		category: '',
 		description: '',
@@ -12,10 +12,7 @@ export default function EventForm({ setFormOpen, setEvents, createEvent }) {
 		date: ''
 	};
 
-	const [
-		values,
-		setValues
-	] = useState(initialValues);
+	const [values, setValues] = useState(initialValues);
 
 	function handleFormSubmit() {
 		createEvent({ ...values, id: cuid(), hostedBy: 'Bob', attendees: [], hostPhotoURL: '/assets/user.png' });
