@@ -23,6 +23,7 @@ export default function EventDashboard({ formOpen, setFormOpen, selectEvent, sel
 						setEvents={setEvents}
 						createEvent={handleCreateEvent}
 						selectedEvent={selectedEvent}
+						key={selectedEvent ? selectedEvent.id : null} // allows me to cycle through diffrent events
 					/>
 				)}
 			</Grid.Column>
